@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Router SPA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="https://aomineDev.github.io/ico/aomine.ico">
+</head>
+
+<body>
+  <header class="Header">
+    <div class="Header-wrapper container">
+      <h1 class="Header-title">Router <span class="Header-title-spa">Spa</span></h1>
+      <ul class="Header-item-wrapper">
+        <li class="Header-item"><button class="Header-item-link" onclick="router.loadRoute('')">Home</button></li>
+        <li class="Header-item"><button class="Header-item-link" onclick="router.loadRoute('contact')">Contact</button></li>
+        <li class="Header-item"><button class="Header-item-link" onclick="router.loadRoute('about-me')">About me</button></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="Main">
+    <div class="container">
+      <div data-router></div>
+    </div>
+  </main>
+
+  <script src="js/router.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
